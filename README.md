@@ -26,3 +26,17 @@ If someone would like to help me in maintaining a Windows version, I would appre
 
 - See the full log: `docker-compose logs --tail=100 -f`
 - Watch for mined blocks: `docker-compose logs --tail=100 -f | grep -A 10 --color -i 'Mined a block'` 
+
+# Check your NGC using the GraphQL Playground
+
+_This works when using the normal docker-compose.yml which enables the graphql server_
+
+- Visit: http://localhost:23061/ui/playground
+- Enter the following Query and press the Play button:
+
+```
+query
+{
+  goldBalance(address: "YOUR_ADDRESS_HERE")
+}
+```
