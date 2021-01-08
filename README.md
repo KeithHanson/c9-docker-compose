@@ -17,6 +17,7 @@ If someone would like to help me in maintaining a Windows version, I would appre
 1. Install Docker.
 1. Install Docker Compose.
 1. Git clone this repository
+1. Copy the .env.example to .env and fill in your details
 1. Open a terminal to where you cloned this repository
 1. Run: `./refresh-snapshot.sh`
 1. Run: `docker-compose up -d`
