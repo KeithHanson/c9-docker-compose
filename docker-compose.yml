@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   c9-miner1:
     image: planetariumhq/ninechronicles-headless:git-09c5883b4937cb864e9dd5e1a5b5ddcb472ace6b

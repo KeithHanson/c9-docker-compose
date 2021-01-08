@@ -1,0 +1,255 @@
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Mined a block #536792 [difficulty: 18283570; prev: f3b1d261ba12d47c4e4f82b44f1d98be7553efa85a894feb07989c412407093f; session: 840261590; proc: 1].
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Trying to append block 536792: b985866490b66802681ba6ff6e546ba3c49ebaf526745761d976d4047d3e093d
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Unstaging transactions...
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Block 536792: b985866490b66802681ba6ff6e546ba3c49ebaf526745761d976d4047d3e093d is appended.
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Invoking RenderBlock() for #536792 b985866490b66802681ba6ff6e546ba3c49ebaf526745761d976d4047d3e093d (was #536791 f3b1d261ba12d47c4e4f82b44f1d98be7553efa85a894feb07989c412407093f)...
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Invoked RenderBlock() for #536792 b985866490b66802681ba6ff6e546ba3c49ebaf526745761d976d4047d3e093d (was #536791 f3b1d261ba12d47c4e4f82b44f1d98be7553efa85a894feb07989c412407093f).
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Appended a block #536792 [difficulty: 18283570; prev: f3b1d261ba12d47c4e4f82b44f1d98be7553efa85a894feb07989c412407093f; session: 840261590; proc: 1].
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Trying to broadcast blocks...
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Block broadcasting complete.
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Start mining.
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Start to mine a block #536793 [difficulty: 18256789; prev: b985866490b66802681ba6ff6e546ba3c49ebaf526745761d976d4047d3e093d; session: 1852477810; proc: 1]... 
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Broadcasting message: Libplanet.Net.Messages.BlockHeaderMessage as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:53:09 DBG] There are 6 staged transactions.
+[36mc9-miner1_1  |[0m [05:53:09 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:53:10 DBG] Tx 3/6 7620127746e5500f39244ac1d39d8564c1e5b09d2f07f27b33033220d6d2408a has an invalid nonce: 1105 (0x714D6509E10f627E0c2436676b2C194F13f5c581).
+[36mc9-miner1_1  |[0m [05:53:10 DBG] A reply has parsed: Libplanet.Net.Messages.Tx from 0x0C9Db7AAABE5Fd5640bdc8bf77567F35d3ED87F2.Unspecified/9c-main-seed-3.planetarium.dev:31234.
+[36mc9-miner1_1  |[0m [05:53:10 DBG] Received 1 reply messages to 0323542b-a2c3-43a2-9216-ffdd6105873e from 0x0C9Db7AAABE5Fd5640bdc8bf77567F35d3ED87F2: ["Libplanet.Net.Messages.Tx"].
+[36mc9-miner1_1  |[0m [05:53:10 DBG] A reply has parsed: Libplanet.Net.Messages.Tx from 0x06dBCA0A933679995487616abbCF4E22251415f0.Unspecified/18.220.105.201:57499.76.185.206.89
+[36mc9-miner1_1  |[0m [05:53:10 DBG] Received 1 reply messages to e02fe623-5752-4c6a-8509-9b8dbecb0042 from 0x06dBCA0A933679995487616abbCF4E22251415f0: ["Libplanet.Net.Messages.Tx"].
+[36mc9-miner1_1  |[0m [05:53:10 DBG] Txs staged successfully: ["3819916d67f65d3b4ba44bbae9060ce95a21a9d13ab062ffd32fa474cfaeb557", "a20766be9e5fe8f29419996ce47e9134b6d6929f1e6faa0c82df7f9638b955b2"]
+[36mc9-miner1_1  |[0m [05:53:10 DBG] Broadcast 2 txs...
+[36mc9-miner1_1  |[0m [05:53:10 DBG] Broadcasting message: Libplanet.Net.Messages.TxIds as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:53:10 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:53:10 DBG] A message has parsed: Libplanet.Net.Messages.BlockHeaderMessage, from 0x06cff6c95899621dF8330e3E8AFC85cf0f648b96.Unspecified/3.22.224.238:62930.113.176.46.58
+[36mc9-miner1_1  |[0m [05:53:10 DBG] Adding peer 0x06cff6c95899621dF8330e3E8AFC85cf0f648b96.Unspecified/3.22.224.238:62930.113.176.46.58 to routing table.
+[36mc9-miner1_1  |[0m [05:53:10 DBG] Received a BlockHeader #536793 35b5d25c1f62a3865ea1d1f4db53f359018dd307691552a03e249626e3dcb771.
+[36mc9-miner1_1  |[0m [05:53:10 DBG] No blocks are required (current: 536792, demand: 536794, received: 536793); BlockHeaderMessage is ignored.
+[36mc9-miner1_1  |[0m [05:53:10 DBG] Stun Message is: Libplanet.Stun.Messages.ConnectionAttempt
+[36mc9-miner1_1  |[0m [05:53:11 DBG] A message has parsed: Libplanet.Net.Messages.Ping, from 0xDE04a50b4d4Bb5eF4Ddb082b412c803E67765DF0.Unspecified/3.22.224.238:50119.76.105.206.80
+[36mc9-miner1_1  |[0m [05:53:11 DBG] Reply Libplanet.Net.Messages.Pong to 0056b4bd54...
+[36mc9-miner1_1  |[0m [05:53:11 DBG] Adding peer 0xDE04a50b4d4Bb5eF4Ddb082b412c803E67765DF0.Unspecified/3.22.224.238:50119.76.105.206.80 to routing table.
+--
+[36mc9-miner1_1  |[0m [05:54:53 DBG] Mined a block #536802 [difficulty: 18256716; prev: 79a24195241921297abdd8113f7faead323161d68a82d49b6c4309606952a036; session: 843078180; proc: 1].
+[36mc9-miner1_1  |[0m [05:54:53 DBG] Trying to append block 536802: 6a5036c82127048981534a1e62cdcb59696321c07ff2b76b849171d24af1d5e1
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Unstaging transactions...
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Block 536802: 6a5036c82127048981534a1e62cdcb59696321c07ff2b76b849171d24af1d5e1 is appended.
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Invoking RenderBlock() for #536802 6a5036c82127048981534a1e62cdcb59696321c07ff2b76b849171d24af1d5e1 (was #536801 79a24195241921297abdd8113f7faead323161d68a82d49b6c4309606952a036)...
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Invoked RenderBlock() for #536802 6a5036c82127048981534a1e62cdcb59696321c07ff2b76b849171d24af1d5e1 (was #536801 79a24195241921297abdd8113f7faead323161d68a82d49b6c4309606952a036).
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Appended a block #536802 [difficulty: 18256716; prev: 79a24195241921297abdd8113f7faead323161d68a82d49b6c4309606952a036; session: 843078180; proc: 1].
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Trying to broadcast blocks...
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Block broadcasting complete.
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Start mining.
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Start to mine a block #536803 [difficulty: 18247802; prev: 6a5036c82127048981534a1e62cdcb59696321c07ff2b76b849171d24af1d5e1; session: 1416798415; proc: 1]... 
+[36mc9-miner1_1  |[0m [05:54:54 DBG] There are 1 staged transactions.
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Broadcasting message: Libplanet.Net.Messages.BlockHeaderMessage as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Tx 1/1 7620127746e5500f39244ac1d39d8564c1e5b09d2f07f27b33033220d6d2408a has an invalid nonce: 1105 (0x714D6509E10f627E0c2436676b2C194F13f5c581).
+[36mc9-miner1_1  |[0m [05:54:54 DBG] A message has parsed: Libplanet.Net.Messages.BlockHeaderMessage, from 0x1AE728bF2Eea921e6A22044A7De4110da418Ff3f.Unspecified/3.22.224.238:56830.79.216.157.234
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Adding peer 0x1AE728bF2Eea921e6A22044A7De4110da418Ff3f.Unspecified/3.22.224.238:56830.79.216.157.234 to routing table.
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Received a BlockHeader #536801 79a24195241921297abdd8113f7faead323161d68a82d49b6c4309606952a036.
+[36mc9-miner1_1  |[0m [05:54:54 DBG] No blocks are required (current: 536802, demand: null, received: 536801); BlockHeaderMessage is ignored.
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Stun Message is: Libplanet.Stun.Messages.CreatePermissionSuccessResponse
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Request taken. 0 requests are left.
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Trying to send Libplanet.Net.Messages.Ping to 0xadB98469C345dCDB8D1c332667bcfDf9C07A1DC1.Unspecified/18.220.105.201:54817.112.168.27.222...
+[36mc9-miner1_1  |[0m [05:54:54 DBG] A message Libplanet.Net.Messages.Ping sent.
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Stun Message is: Libplanet.Stun.Messages.CreatePermissionSuccessResponse
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Stun Message is: Libplanet.Stun.Messages.CreatePermissionSuccessResponse
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Stun Message is: Libplanet.Stun.Messages.CreatePermissionSuccessResponse
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Request taken. 1 requests are left.
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Stun Message is: Libplanet.Stun.Messages.CreatePermissionSuccessResponse
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Trying to send Libplanet.Net.Messages.Ping to 0x42Edb82eb1bef31E59CF94d6FA50dc252168c99B.Unspecified/3.138.153.104:54956.59.84.167.181...
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Request taken. 2 requests are left.
+[36mc9-miner1_1  |[0m [05:54:54 DBG] Trying to send Libplanet.Net.Messages.Ping to 0x37b0DfBB7E3bEC94e266708e586842a8Fba87211.Unspecified/3.22.224.238:64400.24.111.204.108...
+--
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Mined a block #536804 [difficulty: 18256712; prev: 834c788ab863696e123327e46420cc114d7b69aa2cd3ca82cf500315deb48e10; session: 785526032; proc: 1].
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Trying to append block 536804: 2b0a9b9efed0559ff78d187937c4345f1db740b8e7e6c7c86f40e7182fccda50
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Unstaging transactions...
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Block 536802: abb6b76f8f7c6e2d2079b3cf3771b9c54afbf0e953c62619173c7d51ae4b92d9 is appended.
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Block #536802 abb6b76f8f7c6e2d2079b3cf3771b9c54afbf0e953c62619173c7d51ae4b92d9 was appended.
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Try to append a block #536803 61d46f91864156a52393352fd2146fe4ef6adb29603008e90860b96baadbf3eb...
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Trying to append block 536803: 61d46f91864156a52393352fd2146fe4ef6adb29603008e90860b96baadbf3eb
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Execute actions in the block #536803 61d46f91864156a52393352fd2146fe4ef6adb29603008e90860b96baadbf3eb.
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Evaluating block action in block 536803: 61d46f91864156a52393352fd2146fe4ef6adb29603008e90860b96baadbf3eb
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Unstaging transactions...
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Block 536803: 61d46f91864156a52393352fd2146fe4ef6adb29603008e90860b96baadbf3eb is appended.
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Block #536803 61d46f91864156a52393352fd2146fe4ef6adb29603008e90860b96baadbf3eb was appended.
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Try to append a block #536804 09f1395e1f140752f0070698bc8a2971f5c5797cae9606a448a2cfa493cb9562...
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Trying to append block 536804: 09f1395e1f140752f0070698bc8a2971f5c5797cae9606a448a2cfa493cb9562
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Execute actions in the block #536804 09f1395e1f140752f0070698bc8a2971f5c5797cae9606a448a2cfa493cb9562.
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Evaluating block action in block 536804: 09f1395e1f140752f0070698bc8a2971f5c5797cae9606a448a2cfa493cb9562
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Unstaging transactions...
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Block 536804: 2b0a9b9efed0559ff78d187937c4345f1db740b8e7e6c7c86f40e7182fccda50 is appended.
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Invoking RenderBlock() for #536804 2b0a9b9efed0559ff78d187937c4345f1db740b8e7e6c7c86f40e7182fccda50 (was #536803 834c788ab863696e123327e46420cc114d7b69aa2cd3ca82cf500315deb48e10)...
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Invoked RenderBlock() for #536804 2b0a9b9efed0559ff78d187937c4345f1db740b8e7e6c7c86f40e7182fccda50 (was #536803 834c788ab863696e123327e46420cc114d7b69aa2cd3ca82cf500315deb48e10).
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Appended a block #536804 [difficulty: 18256712; prev: 834c788ab863696e123327e46420cc114d7b69aa2cd3ca82cf500315deb48e10; session: 785526032; proc: 1].
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Trying to broadcast blocks...
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Block broadcasting complete.
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Start mining.
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Start to mine a block #536805 [difficulty: 18229970; prev: 2b0a9b9efed0559ff78d187937c4345f1db740b8e7e6c7c86f40e7182fccda50; session: 500365087; proc: 1]... 
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Broadcasting message: Libplanet.Net.Messages.BlockHeaderMessage as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:55:41 DBG] There are 4 staged transactions.
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Unstaging transactions...
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Block 536804: 09f1395e1f140752f0070698bc8a2971f5c5797cae9606a448a2cfa493cb9562 is appended.
+[36mc9-miner1_1  |[0m [05:55:41 DBG] Block #536804 09f1395e1f140752f0070698bc8a2971f5c5797cae9606a448a2cfa493cb9562 was appended.
+--
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Mined a block #536807 [difficulty: 18265625; prev: 57062a7627a0c5dded4372c584ce76aed6f4736f3c79ab0791c81e841d6a768f; session: 1690066708; proc: 1].
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Trying to append block 536807: f68829c9a8b72e1f46f87b40a5e579813c1de57705542e84cf550b0e18fce356
+[36mc9-miner1_1  |[0m [05:55:49 DBG] BlockDemand #536807 1789433b7ab011a8d170806e39bf7975111f81741763f85ecf54171b8a281b95 from 0x200EfEdfe04513c5AD6F99E8091dCf35BB9aCdbB.Unspecified/18.220.105.201:61738.14.232.68.166.
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Trying to find branchpoint...
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Locator's count: 30
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Unstaging transactions...
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Block 536807: f68829c9a8b72e1f46f87b40a5e579813c1de57705542e84cf550b0e18fce356 is appended.
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Invoking RenderBlock() for #536807 f68829c9a8b72e1f46f87b40a5e579813c1de57705542e84cf550b0e18fce356 (was #536806 57062a7627a0c5dded4372c584ce76aed6f4736f3c79ab0791c81e841d6a768f)...
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Invoked RenderBlock() for #536807 f68829c9a8b72e1f46f87b40a5e579813c1de57705542e84cf550b0e18fce356 (was #536806 57062a7627a0c5dded4372c584ce76aed6f4736f3c79ab0791c81e841d6a768f).
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Appended a block #536807 [difficulty: 18265625; prev: 57062a7627a0c5dded4372c584ce76aed6f4736f3c79ab0791c81e841d6a768f; session: 1690066708; proc: 1].
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Trying to broadcast blocks...
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Block broadcasting complete.
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Start mining.
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Start to mine a block #536808 [difficulty: 18256707; prev: f68829c9a8b72e1f46f87b40a5e579813c1de57705542e84cf550b0e18fce356; session: 1020996478; proc: 1]... 
+[36mc9-miner1_1  |[0m [05:55:49 DBG] There are 4 staged transactions.
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Broadcasting message: Libplanet.Net.Messages.BlockHeaderMessage as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Tx 3/4 7620127746e5500f39244ac1d39d8564c1e5b09d2f07f27b33033220d6d2408a has an invalid nonce: 1105 (0x714D6509E10f627E0c2436676b2C194F13f5c581).
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Stun Message is: Libplanet.Stun.Messages.CreatePermissionSuccessResponse
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Request taken. 0 requests are left.
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Trying to send Libplanet.Net.Messages.GetBlockHashes to 0x200EfEdfe04513c5AD6F99E8091dCf35BB9aCdbB.Unspecified/18.220.105.201:61738.14.232.68.166...
+[36mc9-miner1_1  |[0m [05:55:49 DBG] A message Libplanet.Net.Messages.GetBlockHashes sent.
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Stun Message is: Libplanet.Stun.Messages.ConnectionAttempt
+[36mc9-miner1_1  |[0m [05:55:49 DBG] A message has parsed: Libplanet.Net.Messages.TxIds, from 0xAF2aDbbDeF058f004884Ce9ed39C082a3f6A1937.Unspecified/18.220.105.201:50014.93.13.21.86
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Adding peer 0xAF2aDbbDeF058f004884Ce9ed39C082a3f6A1937.Unspecified/18.220.105.201:50014.93.13.21.86 to routing table.
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Received a TxIds message: ["dc196426d2ea7b3dd0070cac460eaab96028e2ad077e015fa7bc698b337f6628", "d69e7d6b3da6c7c5e7294dd241448e5b7d4787be38932f6cd1100f0fcb39539a", "40e3237c1bd417f30b32143c0922a72fa942a0505fc7f7552513d634a1fd9f50", "b40ae4ca1793873f826e2910fb8141ab36035d8ccebb693ae7f2252efdcf85f5", "32ccd04c956f8b609b634a49264b9998578d457ff8bf1b0ee9ae313f37f9d7f8", "aedd3973fbc4eec20c960926ccf750134ea3d1aeede0590be6559ce26bf829d5", "cb6c0f454a84026f2d00d32f07a99e70e3fbf3e9b8ebce05aa3da4073155133f", "d53584b713e757545bb517b6e56b671706c7a3d696c68741a7795f49afa0e087", "ab119ab9e5164a6a0f465aa7b623e2e0503f75c593eeecd397671443c6c8e794", "5df33ae5dcf86534aec7ae1bc1b444e15d60c1f6587ba7345621c82cbd3a29fd", "0416590e109849d8d8bd7797dbb40375b1f132bc3e8f227324fce6f1ff8bc33d", "9e595c3f0c39d6033c40829b240acde86138d9aba89a62a64aa215947333419b"].
+[36mc9-miner1_1  |[0m [05:55:49 DBG] No unaware transactions to receive.
+[36mc9-miner1_1  |[0m [05:55:49 DBG] A message has parsed: Libplanet.Net.Messages.TxIds, from 0x10AD5E6aB4D0c3DCCd8A15e4d1D3af611D13b93b.Unspecified/18.220.105.201:51715.18.221.29.143
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Adding peer 0x10AD5E6aB4D0c3DCCd8A15e4d1D3af611D13b93b.Unspecified/18.220.105.201:51715.18.221.29.143 to routing table.
+[36mc9-miner1_1  |[0m [05:55:49 DBG] Received a TxIds message: ["b40ae4ca1793873f826e2910fb8141ab36035d8ccebb693ae7f2252efdcf85f5"].
+[36mc9-miner1_1  |[0m [05:55:49 DBG] No unaware transactions to receive.
+--
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Mined a block #536808 [difficulty: 18256707; prev: f68829c9a8b72e1f46f87b40a5e579813c1de57705542e84cf550b0e18fce356; session: 1020996478; proc: 1].
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Trying to append block 536808: 9e39fb0cf1ce0f9b4dce0d5db940cd10c9b8eb2cedb72eaf4b1b390fdcc4ac3d
+[36mc9-miner1_1  |[0m [05:56:07 DBG] No blocks are required (current: 536807, demand: 536808, received: 536807); BlockHeaderMessage is ignored.
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Unstaging transactions...
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Block 536808: 9e39fb0cf1ce0f9b4dce0d5db940cd10c9b8eb2cedb72eaf4b1b390fdcc4ac3d is appended.
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Invoking RenderBlock() for #536808 9e39fb0cf1ce0f9b4dce0d5db940cd10c9b8eb2cedb72eaf4b1b390fdcc4ac3d (was #536807 f68829c9a8b72e1f46f87b40a5e579813c1de57705542e84cf550b0e18fce356)...
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Invoked RenderBlock() for #536808 9e39fb0cf1ce0f9b4dce0d5db940cd10c9b8eb2cedb72eaf4b1b390fdcc4ac3d (was #536807 f68829c9a8b72e1f46f87b40a5e579813c1de57705542e84cf550b0e18fce356).
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Appended a block #536808 [difficulty: 18256707; prev: f68829c9a8b72e1f46f87b40a5e579813c1de57705542e84cf550b0e18fce356; session: 1020996478; proc: 1].
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Trying to broadcast blocks...
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Block broadcasting complete.
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Start mining.
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Start to mine a block #536809 [difficulty: 18265621; prev: 9e39fb0cf1ce0f9b4dce0d5db940cd10c9b8eb2cedb72eaf4b1b390fdcc4ac3d; session: 2037164090; proc: 1]... 
+[36mc9-miner1_1  |[0m [05:56:07 DBG] There are 6 staged transactions.
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Broadcasting message: Libplanet.Net.Messages.BlockHeaderMessage as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Txs staged successfully: ["aa8748f6d16622953681a7b9ef5b04009b2221549448d76d3556dc1a342e04c7"]
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Broadcast 1 txs...
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Processing txids: ["ac72756d1e9ce8950773c6e96dbcf6db42b9ae8cae5bd981a49a6eb627ea6cf6"]
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Required tx count: 1.
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Tx 1/6 7620127746e5500f39244ac1d39d8564c1e5b09d2f07f27b33033220d6d2408a has an invalid nonce: 1105 (0x714D6509E10f627E0c2436676b2C194F13f5c581).
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Broadcasting message: Libplanet.Net.Messages.TxIds as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Stun Message is: Libplanet.Stun.Messages.CreatePermissionSuccessResponse
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Request taken. 0 requests are left.
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Trying to send Libplanet.Net.Messages.GetTxs to 0x06dBCA0A933679995487616abbCF4E22251415f0.Unspecified/18.220.105.201:57499.76.185.206.89...
+[36mc9-miner1_1  |[0m [05:56:07 DBG] A message Libplanet.Net.Messages.GetTxs sent.
+[36mc9-miner1_1  |[0m [05:56:07 DBG] A message has parsed: Libplanet.Net.Messages.TxIds, from 0x3217f757064Cd91CAba40a8eF3851F4a9e5b4985.Unspecified/9c-main-miner-2.planetarium.dev:31234.
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Adding peer 0x3217f757064Cd91CAba40a8eF3851F4a9e5b4985.Unspecified/9c-main-miner-2.planetarium.dev:31234. to routing table.
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Received a TxIds message: ["1be9ba7394c671f434ac222b335b41e23fc3f8773f4e71c2a8766a4650789ca0"].
+[36mc9-miner1_1  |[0m [05:56:07 DBG] Unaware transactions to receive: ["1be9ba7394c671f434ac222b335b41e23fc3f8773f4e71c2a8766a4650789ca0"].
+[36mc9-miner1_1  |[0m [05:56:07 DBG] A reply has parsed: Libplanet.Net.Messages.Blocks from 0x200EfEdfe04513c5AD6F99E8091dCf35BB9aCdbB.Unspecified/18.220.105.201:61738.14.232.68.166
+--
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Mined a block #536816 [difficulty: 18220996; prev: 666c1287303dadf51c25eeaed363d086e5c16a4aa2e37722e736ea2e9189a2a6; session: 498754896; proc: 1].
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Trying to append block 536816: 790e8aa9ed33f83a0d41eed41374c2edf618da19595ce44fd6af6522a56c42f5
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Unstaging transactions...
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Block 536816: 790e8aa9ed33f83a0d41eed41374c2edf618da19595ce44fd6af6522a56c42f5 is appended.
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Invoking RenderBlock() for #536816 790e8aa9ed33f83a0d41eed41374c2edf618da19595ce44fd6af6522a56c42f5 (was #536815 666c1287303dadf51c25eeaed363d086e5c16a4aa2e37722e736ea2e9189a2a6)...
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Invoked RenderBlock() for #536816 790e8aa9ed33f83a0d41eed41374c2edf618da19595ce44fd6af6522a56c42f5 (was #536815 666c1287303dadf51c25eeaed363d086e5c16a4aa2e37722e736ea2e9189a2a6).
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Appended a block #536816 [difficulty: 18220996; prev: 666c1287303dadf51c25eeaed363d086e5c16a4aa2e37722e736ea2e9189a2a6; session: 498754896; proc: 1].
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Trying to broadcast blocks...
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Block broadcasting complete.
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Start mining.
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Start to mine a block #536817 [difficulty: 18229892; prev: 790e8aa9ed33f83a0d41eed41374c2edf618da19595ce44fd6af6522a56c42f5; session: 2035642581; proc: 1]... 
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Broadcasting message: Libplanet.Net.Messages.BlockHeaderMessage as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:58:11 DBG] There are 2 staged transactions.
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Tx 1/2 7620127746e5500f39244ac1d39d8564c1e5b09d2f07f27b33033220d6d2408a has an invalid nonce: 1105 (0x714D6509E10f627E0c2436676b2C194F13f5c581).
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Stun Message is: Libplanet.Stun.Messages.ConnectionAttempt
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Stun Message is: Libplanet.Stun.Messages.ConnectionAttempt
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Stun Message is: Libplanet.Stun.Messages.ConnectionAttempt
+[36mc9-miner1_1  |[0m [05:58:11 DBG] A message has parsed: Libplanet.Net.Messages.GetTxs, from 0xEC0Da139FC324C8B7fFA074334237E722654c0B8.Unspecified/3.138.153.104:53839.71.192.219.35
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Adding peer 0xEC0Da139FC324C8B7fFA074334237E722654c0B8.Unspecified/3.138.153.104:53839.71.192.219.35 to routing table.
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Reply Libplanet.Net.Messages.Tx to 007fb5bd54...
+[36mc9-miner1_1  |[0m [05:58:11 DBG] A reply sent to 007fb5bd54
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Stun Message is: Libplanet.Stun.Messages.ConnectionAttempt
+[36mc9-miner1_1  |[0m [05:58:11 DBG] Stun Message is: Libplanet.Stun.Messages.ConnectionAttempt
+[36mc9-miner1_1  |[0m [05:58:12 DBG] A message has parsed: Libplanet.Net.Messages.GetBlockHashes, from 0x9Ff8224D4FeC9dbE0fF6D513D1E0C036A4a7825E.Unspecified/18.220.105.201:57455.3.12.151.118
+[36mc9-miner1_1  |[0m [05:58:12 DBG] Adding peer 0x9Ff8224D4FeC9dbE0fF6D513D1E0C036A4a7825E.Unspecified/18.220.105.201:57455.3.12.151.118 to routing table.
+[36mc9-miner1_1  |[0m [05:58:12 DBG] Stun Message is: Libplanet.Stun.Messages.ConnectionAttempt
+[36mc9-miner1_1  |[0m [05:58:12 DBG] Stun Message is: Libplanet.Stun.Messages.ConnectionAttempt
+[36mc9-miner1_1  |[0m [05:58:12 DBG] Stun Message is: Libplanet.Stun.Messages.ConnectionAttempt
+[36mc9-miner1_1  |[0m [05:58:12 DBG] Reply Libplanet.Net.Messages.BlockHashes to 0080b5bd54...
+[36mc9-miner1_1  |[0m [05:58:12 DBG] A message has parsed: Libplanet.Net.Messages.GetBlockHashes, from 0x75373B099aee28756C240d0F20901cEe79cC3939.Unspecified/9c-main-seed-1.planetarium.dev:31234.
+--
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Mined a block #536817 [difficulty: 18229892; prev: 790e8aa9ed33f83a0d41eed41374c2edf618da19595ce44fd6af6522a56c42f5; session: 2035642581; proc: 1].
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Trying to append block 536817: 85269505c334743c7acb146a762bf080238a43a914e586aad1c090cc140728ed
+[36mc9-miner1_1  |[0m [05:58:27 DBG] No blocks are required (current: 536816, demand: 536816, received: 536814); BlockHeaderMessage is ignored.
+[36mc9-miner1_1  |[0m [05:58:27 DBG] No blocks are required (current: 536816, demand: 536816, received: 536810); BlockHeaderMessage is ignored.
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Broadcast Staged Transactions: [7620127746e5500f39244ac1d39d8564c1e5b09d2f07f27b33033220d6d2408a, a718fa9f75f65a68cfe02f9d62baf79a55adf7056e15651eb106cb949e7c2e89]
+[36mc9-miner1_1  |[0m [05:58:27 DBG] No blocks are required (current: 536816, demand: 536816, received: 536812); BlockHeaderMessage is ignored.
+[36mc9-miner1_1  |[0m [05:58:27 DBG] No blocks are required (current: 536816, demand: 536816, received: 536811); BlockHeaderMessage is ignored.
+[36mc9-miner1_1  |[0m [05:58:27 DBG] No blocks are required (current: 536816, demand: 536816, received: 536813); BlockHeaderMessage is ignored.
+[36mc9-miner1_1  |[0m [05:58:27 DBG] No blocks are required (current: 536816, demand: 536816, received: 536815); BlockHeaderMessage is ignored.
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Broadcasting message: Libplanet.Net.Messages.TxIds as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Unstaging transactions...
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Block 536817: 85269505c334743c7acb146a762bf080238a43a914e586aad1c090cc140728ed is appended.
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Invoking RenderBlock() for #536817 85269505c334743c7acb146a762bf080238a43a914e586aad1c090cc140728ed (was #536816 790e8aa9ed33f83a0d41eed41374c2edf618da19595ce44fd6af6522a56c42f5)...
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Invoked RenderBlock() for #536817 85269505c334743c7acb146a762bf080238a43a914e586aad1c090cc140728ed (was #536816 790e8aa9ed33f83a0d41eed41374c2edf618da19595ce44fd6af6522a56c42f5).
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Appended a block #536817 [difficulty: 18229892; prev: 790e8aa9ed33f83a0d41eed41374c2edf618da19595ce44fd6af6522a56c42f5; session: 2035642581; proc: 1].
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Trying to broadcast blocks...
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Block broadcasting complete.
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Start mining.
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Start to mine a block #536818 [difficulty: 18238793; prev: 85269505c334743c7acb146a762bf080238a43a914e586aad1c090cc140728ed; session: 1830858360; proc: 1]... 
+[36mc9-miner1_1  |[0m [05:58:27 DBG] There are 1 staged transactions.
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Txs staged successfully: ["4ed112427f1b646da0c620a0533bd63a9a956a1e9b6a91bc94a360487f0c7ae8"]
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Broadcast 1 txs...
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Processing txids: ["b20faa563b28f31c593972c1f44a629fdc912e02034e3909cfb6e9146db29c21"]
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Required tx count: 1.
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Tx 1/1 7620127746e5500f39244ac1d39d8564c1e5b09d2f07f27b33033220d6d2408a has an invalid nonce: 1105 (0x714D6509E10f627E0c2436676b2C194F13f5c581).
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Broadcasting message: Libplanet.Net.Messages.BlockHeaderMessage as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Broadcasting message: Libplanet.Net.Messages.TxIds as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:58:27 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:58:27 DBG] A message has parsed: Libplanet.Net.Messages.TxIds, from 0x06dBCA0A933679995487616abbCF4E22251415f0.Unspecified/18.220.105.201:57499.76.185.206.89
+--
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Mined a block #536818 [difficulty: 18238793; prev: 85269505c334743c7acb146a762bf080238a43a914e586aad1c090cc140728ed; session: 1830858360; proc: 1].
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Trying to append block 536818: 6d4f32f2df5581709242b466fd4f3f10cde02ab4818e725382388b9070cdaec2
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Reply Libplanet.Net.Messages.Tx to 00a4b5bd54...
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Broadcast Staged Transactions: [7620127746e5500f39244ac1d39d8564c1e5b09d2f07f27b33033220d6d2408a, d1cc05262836685c3a21a4e092767c9199bea13ce5b8a44bf53f9b5b2a4a5246, ce7def971a4ded103d426e5a5a9325c8c5e0707947ef26c336d9b8378af42e06, 4ed112427f1b646da0c620a0533bd63a9a956a1e9b6a91bc94a360487f0c7ae8, 734c634ead4429dcb3f8bfa7fbc799d0b486a1c96aedf91cde94cbb84f429b22, 820b6f607ef3ee3257f61c5c4eceb4e35026017be03697d01dbc4b764b4a4db0]
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Unstaging transactions...
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Broadcasting message: Libplanet.Net.Messages.TxIds as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Block 536818: 6d4f32f2df5581709242b466fd4f3f10cde02ab4818e725382388b9070cdaec2 is appended.
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Invoking RenderBlock() for #536818 6d4f32f2df5581709242b466fd4f3f10cde02ab4818e725382388b9070cdaec2 (was #536817 85269505c334743c7acb146a762bf080238a43a914e586aad1c090cc140728ed)...
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Invoked RenderBlock() for #536818 6d4f32f2df5581709242b466fd4f3f10cde02ab4818e725382388b9070cdaec2 (was #536817 85269505c334743c7acb146a762bf080238a43a914e586aad1c090cc140728ed).
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Appended a block #536818 [difficulty: 18238793; prev: 85269505c334743c7acb146a762bf080238a43a914e586aad1c090cc140728ed; session: 1830858360; proc: 1].
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Trying to broadcast blocks...
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Block broadcasting complete.
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Start mining.
+[36mc9-miner1_1  |[0m [05:58:49 DBG] A message has parsed: Libplanet.Net.Messages.TxIds, from 0x314135778FE7B7590385e03C070F31Dba51eB3e3.Unspecified/3.22.224.238:60493.14.232.68.166
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Start to mine a block #536819 [difficulty: 18238793; prev: 6d4f32f2df5581709242b466fd4f3f10cde02ab4818e725382388b9070cdaec2; session: 1454214062; proc: 1]... 
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Adding peer 0x314135778FE7B7590385e03C070F31Dba51eB3e3.Unspecified/3.22.224.238:60493.14.232.68.166 to routing table.
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Received a TxIds message: ["d1cc05262836685c3a21a4e092767c9199bea13ce5b8a44bf53f9b5b2a4a5246"].
+[36mc9-miner1_1  |[0m [05:58:49 DBG] No unaware transactions to receive.
+[36mc9-miner1_1  |[0m [05:58:49 DBG] There are 6 staged transactions.
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Broadcasting message: Libplanet.Net.Messages.BlockHeaderMessage as 0x00c5b64b7c2F55FE9b05C4f64fc8572eaCA282CF.Unspecified/3.22.224.238:53982.73.203.242.12
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Peers to broadcast: 10
+[36mc9-miner1_1  |[0m [05:58:49 DBG] A message has parsed: Libplanet.Net.Messages.TxIds, from 0x06dBCA0A933679995487616abbCF4E22251415f0.Unspecified/18.220.105.201:57499.76.185.206.89
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Adding peer 0x06dBCA0A933679995487616abbCF4E22251415f0.Unspecified/18.220.105.201:57499.76.185.206.89 to routing table.
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Received a TxIds message: ["d1cc05262836685c3a21a4e092767c9199bea13ce5b8a44bf53f9b5b2a4a5246", "ce7def971a4ded103d426e5a5a9325c8c5e0707947ef26c336d9b8378af42e06", "734c634ead4429dcb3f8bfa7fbc799d0b486a1c96aedf91cde94cbb84f429b22", "820b6f607ef3ee3257f61c5c4eceb4e35026017be03697d01dbc4b764b4a4db0"].
+[36mc9-miner1_1  |[0m [05:58:49 DBG] No unaware transactions to receive.
+[36mc9-miner1_1  |[0m [05:58:49 DBG] A message has parsed: Libplanet.Net.Messages.Ping, from 0x2b7e8Ce67B568AE929eCF58e8331e1A0b434741A.Unspecified/18.220.105.201:55048.3.137.158.128
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Reply Libplanet.Net.Messages.Pong to 00a5b5bd54...
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Adding peer 0x2b7e8Ce67B568AE929eCF58e8331e1A0b434741A.Unspecified/18.220.105.201:55048.3.137.158.128 to routing table.
+[36mc9-miner1_1  |[0m [05:58:49 DBG] A message has parsed: Libplanet.Net.Messages.TxIds, from 0xAF2aDbbDeF058f004884Ce9ed39C082a3f6A1937.Unspecified/18.220.105.201:50014.93.13.21.86
+[36mc9-miner1_1  |[0m [05:58:49 DBG] Adding peer 0xAF2aDbbDeF058f004884Ce9ed39C082a3f6A1937.Unspecified/18.220.105.201:50014.93.13.21.86 to routing table.
