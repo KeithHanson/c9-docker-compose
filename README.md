@@ -1,6 +1,6 @@
 # Docker Composerized Headless Miner for Nine Chronicles
 
-Nine Chronicles is an idle game created that runs on a blockchain based platform for multiplayer activities like PvP and Market activity.
+[Nine Chronicles](https://nine-chronicles.com/) is an idle game created that runs on a blockchain based platform for multiplayer activities like PvP and Market activity.
 
 It uses the in-game currency as a way to incentivize miners. 
 
@@ -27,7 +27,7 @@ If someone would like to help me in maintaining a Windows version, I would appre
 - See the full log: `docker-compose logs --tail=100 -f`
 - Watch for mined blocks: `docker-compose logs --tail=100 -f | grep -A 10 --color -i 'Mined a block'` 
 
-# Check your NGC using the GraphQL Playground
+# Check your NCG using the GraphQL Playground
 
 _This works when using the normal docker-compose.yml which enables the graphql server_
 
