@@ -2,14 +2,14 @@ version: "3.9"
 
 services:
   c9-miner1:
-    image: planetariumhq/ninechronicles-headless:git-09c5883b4937cb864e9dd5e1a5b5ddcb472ace6b
+    image: planetariumhq/ninechronicles-headless:git-81f6770a96ab0dda099535158cddf39b17574f6e
     ports:
       - "31234:31234"
       - "23061:23061"
     volumes:
       - 9c-miner1-volume:/app/data
       - ./keystore:/app/planetarium/keystore
-    command: ['-V=100024/6ec8E598962F1f475504F82fD5bF3410eAE58B9B/MEQCICw+Y4inFWwj4miCicrWvOYll.yk7MTBff3.skDEHhUeAiB91ivfR5p6K4btumMKIv3Bs9tSezgQcDnaIfRXhPjnyw==/ZHUxNjpXaW5kb3dzQmluYXJ5VXJsdTU2Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI0L1dpbmRvd3MuemlwdTE0Om1hY09TQmluYXJ5VXJsdTU3Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI0L21hY09TLnRhci5nenU5OnRpbWVzdGFtcHUxMDoyMDIwLTEyLTE4ZQ==',
+    command: ['-V=100025/6ec8E598962F1f475504F82fD5bF3410eAE58B9B/MEQCIBoszO066LuDguq3nr6W87GZlqKalIzg1KEP4tH3EbaCAiBrU4lLQxTB3D4oAulqwHAX0xpqQPQG4S+WExB1XVwjNg==/ZHUxNjpXaW5kb3dzQmluYXJ5VXJsdTU2Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI1L1dpbmRvd3MuemlwdTE0Om1hY09TQmluYXJ5VXJsdTU3Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI1L21hY09TLnRhci5nenU5OnRpbWVzdGFtcHUyNToyMDIxLTAxLTA3VDA3OjAwOjAwKzAwOjAwZQ==',
       '-G=https://9c-test.s3.ap-northeast-2.amazonaws.com/genesis-block-9c-main',
       '-D=5000000',
       '--store-type=rocksdb',
