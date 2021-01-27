@@ -1,14 +1,14 @@
-version: "3.9"
+version: "3.3"
 
 services:
-  c9-miner1:
-    image: planetariumhq/ninechronicles-headless:git-81f6770a96ab0dda099535158cddf39b17574f6e
+  9c-miner1:
+    image: ${LATEST_IMAGE}
     ports:
       - "31234:31234"
+      - "23061:23061"
     volumes:
-      - 9c-miner1-volume:/app/data
-      - ./keystore:/app/planetarium/keystore
-    command: ['-V=100025/6ec8E598962F1f475504F82fD5bF3410eAE58B9B/MEQCIBoszO066LuDguq3nr6W87GZlqKalIzg1KEP4tH3EbaCAiBrU4lLQxTB3D4oAulqwHAX0xpqQPQG4S+WExB1XVwjNg==/ZHUxNjpXaW5kb3dzQmluYXJ5VXJsdTU2Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI1L1dpbmRvd3MuemlwdTE0Om1hY09TQmluYXJ5VXJsdTU3Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI1L21hY09TLnRhci5nenU5OnRpbWVzdGFtcHUyNToyMDIxLTAxLTA3VDA3OjAwOjAwKzAwOjAwZQ==',
+      - 9c-miner1:/app/data
+    command: ['-V=${LATEST_VERSION}',
       '-G=https://9c-test.s3.ap-northeast-2.amazonaws.com/genesis-block-9c-main',
       '-D=5000000',
       '--store-type=rocksdb',
@@ -16,23 +16,24 @@ services:
       '--peer=027bd36895d68681290e570692ad3736750ceaab37be402442ffb203967f98f7b6,9c-main-seed-1.planetarium.dev,31234',
       '--peer=02f164e3139e53eef2c17e52d99d343b8cbdb09eeed88af46c352b1c8be6329d71,9c-main-seed-2.planetarium.dev,31234',
       '--peer=0247e289aa332260b99dfd50e578f779df9e6702d67e50848bb68f3e0737d9b9a5,9c-main-seed-3.planetarium.dev,31234',
-      '--trusted-app-protocol-version-signer=03eeedcd574708681afb3f02fb2aef7c643583089267d17af35e978ecaf2a1184e',
+      '--trusted-app-protocol-version-signer=${TRUSTED_SIGNER}',
       '--workers=50',
       '--confirmations=0',
       '--libplanet-node',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us.planetarium.dev:3478',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us2.planetarium.dev:3478',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us3.planetarium.dev:3478',
+      '--graphql-server',
+      '--graphql-port=23061',
       "--private-key=${NINECHRONICLES_PRIVATE_KEY}"]
     restart: always
-  c9-miner2:
-    image: planetariumhq/ninechronicles-headless:git-81f6770a96ab0dda099535158cddf39b17574f6e
+  9c-miner2:
+    image: ${LATEST_IMAGE}
     ports:
       - "31235:31234"
     volumes:
-      - 9c-miner2-volume:/app/data
-      - ./keystore:/app/planetarium/keystore
-    command: ['-V=100025/6ec8E598962F1f475504F82fD5bF3410eAE58B9B/MEQCIBoszO066LuDguq3nr6W87GZlqKalIzg1KEP4tH3EbaCAiBrU4lLQxTB3D4oAulqwHAX0xpqQPQG4S+WExB1XVwjNg==/ZHUxNjpXaW5kb3dzQmluYXJ5VXJsdTU2Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI1L1dpbmRvd3MuemlwdTE0Om1hY09TQmluYXJ5VXJsdTU3Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI1L21hY09TLnRhci5nenU5OnRpbWVzdGFtcHUyNToyMDIxLTAxLTA3VDA3OjAwOjAwKzAwOjAwZQ==',
+      - 9c-miner2:/app/data
+    command: ['-V=${LATEST_VERSION}',
       '-G=https://9c-test.s3.ap-northeast-2.amazonaws.com/genesis-block-9c-main',
       '-D=5000000',
       '--store-type=rocksdb',
@@ -40,23 +41,24 @@ services:
       '--peer=027bd36895d68681290e570692ad3736750ceaab37be402442ffb203967f98f7b6,9c-main-seed-1.planetarium.dev,31234',
       '--peer=02f164e3139e53eef2c17e52d99d343b8cbdb09eeed88af46c352b1c8be6329d71,9c-main-seed-2.planetarium.dev,31234',
       '--peer=0247e289aa332260b99dfd50e578f779df9e6702d67e50848bb68f3e0737d9b9a5,9c-main-seed-3.planetarium.dev,31234',
-      '--trusted-app-protocol-version-signer=03eeedcd574708681afb3f02fb2aef7c643583089267d17af35e978ecaf2a1184e',
+      '--trusted-app-protocol-version-signer=${TRUSTED_SIGNER}',
       '--workers=50',
       '--confirmations=0',
       '--libplanet-node',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us.planetarium.dev:3478',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us2.planetarium.dev:3478',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us3.planetarium.dev:3478',
+      '--graphql-server',
+      '--graphql-port=23061',
       "--private-key=${NINECHRONICLES_PRIVATE_KEY}"]
     restart: always
-  c9-miner3:
-    image: planetariumhq/ninechronicles-headless:git-81f6770a96ab0dda099535158cddf39b17574f6e
+  9c-miner3:
+    image: ${LATEST_IMAGE}
     ports:
       - "31236:31234"
     volumes:
-      - 9c-miner3-volume:/app/data
-      - ./keystore:/app/planetarium/keystore
-    command: ['-V=100025/6ec8E598962F1f475504F82fD5bF3410eAE58B9B/MEQCIBoszO066LuDguq3nr6W87GZlqKalIzg1KEP4tH3EbaCAiBrU4lLQxTB3D4oAulqwHAX0xpqQPQG4S+WExB1XVwjNg==/ZHUxNjpXaW5kb3dzQmluYXJ5VXJsdTU2Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI1L1dpbmRvd3MuemlwdTE0Om1hY09TQmluYXJ5VXJsdTU3Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI1L21hY09TLnRhci5nenU5OnRpbWVzdGFtcHUyNToyMDIxLTAxLTA3VDA3OjAwOjAwKzAwOjAwZQ==',
+      - 9c-miner3:/app/data
+    command: ['-V=${LATEST_VERSION}',
       '-G=https://9c-test.s3.ap-northeast-2.amazonaws.com/genesis-block-9c-main',
       '-D=5000000',
       '--store-type=rocksdb',
@@ -64,23 +66,24 @@ services:
       '--peer=027bd36895d68681290e570692ad3736750ceaab37be402442ffb203967f98f7b6,9c-main-seed-1.planetarium.dev,31234',
       '--peer=02f164e3139e53eef2c17e52d99d343b8cbdb09eeed88af46c352b1c8be6329d71,9c-main-seed-2.planetarium.dev,31234',
       '--peer=0247e289aa332260b99dfd50e578f779df9e6702d67e50848bb68f3e0737d9b9a5,9c-main-seed-3.planetarium.dev,31234',
-      '--trusted-app-protocol-version-signer=03eeedcd574708681afb3f02fb2aef7c643583089267d17af35e978ecaf2a1184e',
+      '--trusted-app-protocol-version-signer=${TRUSTED_SIGNER}',
       '--workers=50',
       '--confirmations=0',
       '--libplanet-node',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us.planetarium.dev:3478',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us2.planetarium.dev:3478',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us3.planetarium.dev:3478',
+      '--graphql-server',
+      '--graphql-port=23061',
       "--private-key=${NINECHRONICLES_PRIVATE_KEY}"]
     restart: always
-  c9-miner4:
-    image: planetariumhq/ninechronicles-headless:git-81f6770a96ab0dda099535158cddf39b17574f6e
+  9c-miner4:
+    image: ${LATEST_IMAGE}
     ports:
       - "31237:31234"
     volumes:
-      - 9c-miner4-volume:/app/data
-      - ./keystore:/app/planetarium/keystore
-    command: ['-V=100025/6ec8E598962F1f475504F82fD5bF3410eAE58B9B/MEQCIBoszO066LuDguq3nr6W87GZlqKalIzg1KEP4tH3EbaCAiBrU4lLQxTB3D4oAulqwHAX0xpqQPQG4S+WExB1XVwjNg==/ZHUxNjpXaW5kb3dzQmluYXJ5VXJsdTU2Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI1L1dpbmRvd3MuemlwdTE0Om1hY09TQmluYXJ5VXJsdTU3Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI1L21hY09TLnRhci5nenU5OnRpbWVzdGFtcHUyNToyMDIxLTAxLTA3VDA3OjAwOjAwKzAwOjAwZQ==',
+      - 9c-miner4:/app/data
+    command: ['-V=${LATEST_VERSION}',
       '-G=https://9c-test.s3.ap-northeast-2.amazonaws.com/genesis-block-9c-main',
       '-D=5000000',
       '--store-type=rocksdb',
@@ -88,23 +91,24 @@ services:
       '--peer=027bd36895d68681290e570692ad3736750ceaab37be402442ffb203967f98f7b6,9c-main-seed-1.planetarium.dev,31234',
       '--peer=02f164e3139e53eef2c17e52d99d343b8cbdb09eeed88af46c352b1c8be6329d71,9c-main-seed-2.planetarium.dev,31234',
       '--peer=0247e289aa332260b99dfd50e578f779df9e6702d67e50848bb68f3e0737d9b9a5,9c-main-seed-3.planetarium.dev,31234',
-      '--trusted-app-protocol-version-signer=03eeedcd574708681afb3f02fb2aef7c643583089267d17af35e978ecaf2a1184e',
+      '--trusted-app-protocol-version-signer=${TRUSTED_SIGNER}',
       '--workers=50',
       '--confirmations=0',
       '--libplanet-node',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us.planetarium.dev:3478',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us2.planetarium.dev:3478',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us3.planetarium.dev:3478',
+      '--graphql-server',
+      '--graphql-port=23061',
       "--private-key=${NINECHRONICLES_PRIVATE_KEY}"]
     restart: always
-  c9-miner5:
-    image: planetariumhq/ninechronicles-headless:git-81f6770a96ab0dda099535158cddf39b17574f6e
+  9c-miner5:
+    image: ${LATEST_IMAGE}
     ports:
       - "31238:31234"
     volumes:
-      - 9c-miner5-volume:/app/data
-      - ./keystore:/app/planetarium/keystore
-    command: ['-V=100025/6ec8E598962F1f475504F82fD5bF3410eAE58B9B/MEQCIBoszO066LuDguq3nr6W87GZlqKalIzg1KEP4tH3EbaCAiBrU4lLQxTB3D4oAulqwHAX0xpqQPQG4S+WExB1XVwjNg==/ZHUxNjpXaW5kb3dzQmluYXJ5VXJsdTU2Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI1L1dpbmRvd3MuemlwdTE0Om1hY09TQmluYXJ5VXJsdTU3Omh0dHBzOi8vZG93bmxvYWQubmluZS1jaHJvbmljbGVzLmNvbS92MTAwMDI1L21hY09TLnRhci5nenU5OnRpbWVzdGFtcHUyNToyMDIxLTAxLTA3VDA3OjAwOjAwKzAwOjAwZQ==',
+      - 9c-miner5:/app/data
+    command: ['-V=${LATEST_VERSION}',
       '-G=https://9c-test.s3.ap-northeast-2.amazonaws.com/genesis-block-9c-main',
       '-D=5000000',
       '--store-type=rocksdb',
@@ -112,18 +116,46 @@ services:
       '--peer=027bd36895d68681290e570692ad3736750ceaab37be402442ffb203967f98f7b6,9c-main-seed-1.planetarium.dev,31234',
       '--peer=02f164e3139e53eef2c17e52d99d343b8cbdb09eeed88af46c352b1c8be6329d71,9c-main-seed-2.planetarium.dev,31234',
       '--peer=0247e289aa332260b99dfd50e578f779df9e6702d67e50848bb68f3e0737d9b9a5,9c-main-seed-3.planetarium.dev,31234',
-      '--trusted-app-protocol-version-signer=03eeedcd574708681afb3f02fb2aef7c643583089267d17af35e978ecaf2a1184e',
+      '--trusted-app-protocol-version-signer=${TRUSTED_SIGNER}',
       '--workers=50',
       '--confirmations=0',
       '--libplanet-node',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us.planetarium.dev:3478',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us2.planetarium.dev:3478',
       '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us3.planetarium.dev:3478',
+      '--graphql-server',
+      '--graphql-port=23061',
+      "--private-key=${NINECHRONICLES_PRIVATE_KEY}"]
+    restart: always
+  9c-miner6:
+    image: ${LATEST_IMAGE}
+    ports:
+      - "31239:31234"
+    volumes:
+      - 9c-miner6:/app/data
+    command: ['-V=${LATEST_VERSION}',
+      '-G=https://9c-test.s3.ap-northeast-2.amazonaws.com/genesis-block-9c-main',
+      '-D=5000000',
+      '--store-type=rocksdb',
+      '--store-path=/app/data',
+      '--peer=027bd36895d68681290e570692ad3736750ceaab37be402442ffb203967f98f7b6,9c-main-seed-1.planetarium.dev,31234',
+      '--peer=02f164e3139e53eef2c17e52d99d343b8cbdb09eeed88af46c352b1c8be6329d71,9c-main-seed-2.planetarium.dev,31234',
+      '--peer=0247e289aa332260b99dfd50e578f779df9e6702d67e50848bb68f3e0737d9b9a5,9c-main-seed-3.planetarium.dev,31234',
+      '--trusted-app-protocol-version-signer=${TRUSTED_SIGNER}',
+      '--workers=50',
+      '--confirmations=0',
+      '--libplanet-node',
+      '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us.planetarium.dev:3478',
+      '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us2.planetarium.dev:3478',
+      '--ice-server=turn://0ed3e48007413e7c2e638f13ddd75ad272c6c507e081bd76a75e4b7adc86c9af:0apejou+ycZFfwtREeXFKdfLj2gCclKzz5ZJ49Cmy6I=@turn-us3.planetarium.dev:3478',
+      '--graphql-server',
+      '--graphql-port=23061',
       "--private-key=${NINECHRONICLES_PRIVATE_KEY}"]
     restart: always
 volumes:
-  9c-miner1-volume:
-  9c-miner2-volume:
-  9c-miner3-volume:
-  9c-miner4-volume:
-  9c-miner5-volume:
+  9c-miner1:
+  9c-miner2:
+  9c-miner3:
+  9c-miner4:
+  9c-miner5:
+  9c-miner6:

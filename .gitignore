@@ -1,3 +1,4 @@
+*.swp
 .env
 latest-snapshot/*
 keystore/*
